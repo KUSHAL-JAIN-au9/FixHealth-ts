@@ -16,13 +16,18 @@ export default {
         lightDark: "#083344",
       },
       backgroundImage: {
-        "my-image-class0": "url('./assets/doctor13.jpg')",
-        "my-image-class1": "url('./assets/doctor14.jpg')",
-        "my-image-class2": "url('./assets/doctor7.jpg')",
+        "my-image-class0":
+          "url('https://res.cloudinary.com/dgdp9188v/image/upload/v1705844217/fixhealth/main/zggeefzexixviyrqcenf.jpg')",
+        "my-image-class1":
+          "url('https://res.cloudinary.com/dgdp9188v/image/upload/v1705844216/fixhealth/main/bf9wuyx9bf4uwfjeymmm.jpg')",
+        "my-image-class2":
+          "url('https://res.cloudinary.com/dgdp9188v/image/upload/v1705844216/fixhealth/main/mrqzxq9hdqkxbr6phhu6.jpg')",
         "my-image-class3": "url('./assets/doctor9.jpg')",
-        "my-image-class4": "url('./assets/doctor10.jpg')",
-        "my-image-class5": "url('./assets/doctor11.jpg')",
-        "my-image-class6": "url('./assets/doctor12.jpg')",
+        "my-image-class4": "url('./assets/doctor7.jpg')",
+        "my-image-class5":
+          "url('https://res.cloudinary.com/dgdp9188v/image/upload/v1705844216/fixhealth/main/xiqimvpda2je82wg6zro.jpg')",
+        "my-image-class6":
+          "url('https://res.cloudinary.com/dgdp9188v/image/upload/v1705844216/fixhealth/main/ydkp4m19928j9ctlqsjc.jpg')",
       },
     },
   },
