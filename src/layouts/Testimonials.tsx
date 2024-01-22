@@ -43,10 +43,8 @@ const Testimonials = () => {
                 alt="profile picture"
               />
               <div className="space-y-0.5 font-medium  text-left rtl:text-right ms-3">
-                <div className="text-gray-500">Bonnie Green</div>
-                <div className="text-sm text-gray-400 ">
-                  Developer at Open AI
-                </div>
+                <div className="text-gray-500">Suman Kundra</div>
+                <div className="text-sm text-gray-400 ">Teacher</div>
               </div>
             </figcaption>
           </figure>
@@ -77,10 +75,8 @@ const Testimonials = () => {
                 alt="profile picture"
               />
               <div className="space-y-0.5 font-medium text-white text-left rtl:text-right ms-3">
-                <div className="text-gray-500">Roberta Casas</div>
-                <div className="text-sm text-gray-400">
-                  Lead designer at Dropbox
-                </div>
+                <div className="text-gray-500">SheiLaji Varghese</div>
+                <div className="text-sm text-gray-400">Doctor</div>
               </div>
             </figcaption>
           </figure>
@@ -113,9 +109,10 @@ const Testimonials = () => {
               />
 
               <div className="space-y-0.5 font-medium text-white text-left rtl:text-right ms-3">
-                <div className="text-gray-500">Jese Leos</div>
+                <div className="text-gray-500">Rashmi Krishnan</div>
                 <div className="text-sm text-gray-400">
-                  Software Engineer at Facebook
+                  Former Retired Officer, Mother to two, senior citizen.
+                  (1984–2019)
                 </div>
               </div>
             </figcaption>
@@ -145,9 +142,9 @@ const Testimonials = () => {
                 alt="profile picture"
               />
               <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div className="text-gray-500">Joseph McFall</div>
+                <div className="text-gray-500">Sartaj Husain</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                  CTO at Google
+                  Engineer at Bharat Heavy Electricals Limited
                 </div>
               </div>
             </figcaption>

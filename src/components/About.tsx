@@ -20,22 +20,19 @@ const About = () => {
           About Us
         </h1>
         <p className=" text-justify lg:text-start">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
-          labore rerum tempore tenetur commodi natus quos itaque voluptatum
-          repudiandae nostrum accusantium vero voluptate aspernatur totam,
-          laboriosam aut, et quae consequatur?
+          Combing the precision of AI with human physiotherapist expertise for a
+          pain-free world 🥇Quality assured by BAPIO Training Academy, UK 👍🏼
+          100,000+ Sessions Done for patients from 30+ countries
         </p>
         <p className="text-justify lg:text-start">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quia
-          suscipit illum, numquam incidunt nostrum dolor officia doloremque
-          cupiditate, placeat explicabo sed iure atque neque quidem ipsam!
-          Dolor, minus reiciendis.
+          Combing the precision of AI with human physiotherapist expertise for a
+          pain-free world 🥇Quality assured by BAPIO Training Academy, UK 👍🏼
+          100,000+ Sessions Done for patients from 30+ countries
         </p>
         <p className="text-justify lg:text-start">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, illum.
-          Accusantium ab expedita veniam nobis aut, in rerum repellendus!
-          Exercitationem libero recusandae corrupti accusantium reiciendis in
-          placeat illo maxime ea.
+          Combing the precision of AI with human physiotherapist expertise for a
+          pain-free world 🥇Quality assured by BAPIO Training Academy, UK 👍🏼
+          100,000+ Sessions Done for patients from 30+ countries
         </p>
       </motion.div>
 
