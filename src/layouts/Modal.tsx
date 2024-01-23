@@ -9,12 +9,12 @@ import {
 } from "flowbite-react";
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { data } from "../data";
 import { IoIosPerson } from "react-icons/io";
 import { FaBuilding, FaCity } from "react-icons/fa";
 import { MdSmartphone } from "react-icons/md";
 import { GiAges } from "react-icons/gi";
 import { FaUserDoctor } from "react-icons/fa6";
+import { useDoctorContext } from "../context/doctorContext";
 
 interface BookingModalProps {
   openModal: boolean;
@@ -30,6 +30,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
   setOpenModal,
 }) => {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
+
   // const [openModal, setOpenModal] = useState(false);
   const nameInputRef = useRef<HTMLInputElement>(null);
   const [name, setName] = useState<string>("");
@@ -46,16 +47,18 @@ const BookingModal: React.FC<BookingModalProps> = ({
   const navigate = useNavigate();
   const queryParams = new URLSearchParams(location.search);
   const myParam = queryParams.get("city");
+  const { doctors: data, cities } = useDoctorContext();
 
   useEffect(() => {
     const listDoc = data.filter((item) => item.city === myParam);
-    console.log("params changes", listDoc);
+
+    // console.log("params changes", listDoc);
     setDoctors([...listDoc]);
     if (myParam !== null) {
       setcity(myParam);
     }
   }, [myParam]);
-  // console.log("params", queryParams, myParam);
+  // console.log("ApiData", data, cities);
 
   //   const handleChangeCity = (e: {
   //     target: { value: SetStateAction<string> };
@@ -180,7 +183,10 @@ const BookingModal: React.FC<BookingModalProps> = ({
               </div>
               <TextInput
                 id="phone"
-                type="number"
+                type="tel"
+                pattern="[789]\d{9}"
+                title="Enter a valid Indian mobile number"
+                maxLength={10}
                 value={phone}
                 onChange={(e) => setphone(e.target.value)}
                 placeholder="Enter Your phone number"
@@ -199,7 +205,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
               </div>
               <TextInput
                 id="age"
-                // min={1}
+                min={1}
                 max={100}
                 type="number"
                 value={age}
@@ -234,10 +240,17 @@ const BookingModal: React.FC<BookingModalProps> = ({
                 icon={FaCity}
               >
                 <option disabled></option>
-                <option value={"Bangalore"}>Bangalore</option>
+
+                {cities.map((city) => (
+                  <option className="mb-2" value={city}>
+                    {city}
+                  </option>
+                ))}
+                <option disabled></option>
+                {/* <option value={"Bangalore"}>Bangalore</option>
                 <option value={"Delhi"}>Delhi</option>
                 <option value={"Noida"}>Noida</option>
-                <option value={"Chennai"}>Chennai</option>
+                <option value={"Chennai"}>Chennai</option> */}
               </Select>
             </div>
 
@@ -264,6 +277,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
                     {item.name}
                   </option>
                 ))}
+                <option disabled></option>
               </Select>
             </div>
 

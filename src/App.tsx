@@ -9,7 +9,7 @@ import FAQ from "./layouts/FAQ";
 import FooterBar from "./layouts/Footer";
 import Testimonials from "./layouts/Testimonials";
 import HeroBanner from "./layouts/HeroBanner";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DocContext } from "./context/doctorContext";
 
 interface Doctor {
@@ -21,19 +21,29 @@ interface Doctor {
 
 interface ContextValue {
   doctors: Doctor[];
+  cities: Cities;
   updateDoctor: (newValue: Doctor[]) => void;
 }
+type Cities = string[];
 
 function App() {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
+  const [cities, setCities] = useState<Cities>([]);
+
+  useEffect(() => {}, []);
 
   const updateDoctor = (data: Doctor[]) => {
     setDoctors(data);
+    const filteredCities = data.map(({ city }) => city);
+    const distinctFilteredCities: string[] = [...new Set(filteredCities)];
+    // console.log("filteredCities", distinctFilteredCities, data);
+    setCities(distinctFilteredCities);
   };
 
   const contextValue: ContextValue = {
     doctors,
     updateDoctor,
+    cities,
   };
 
   return (

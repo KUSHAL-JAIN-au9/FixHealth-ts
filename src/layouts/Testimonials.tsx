@@ -39,7 +39,7 @@ const Testimonials = () => {
             <figcaption className="flex items-center justify-center ">
               <img
                 className="rounded-full w-9 h-9"
-                src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                src="https://media.istockphoto.com/id/911901526/photo/portrait-of-a-traditionally-dressed-happy-south-indian-woman.webp?s=1024x1024&w=is&k=20&c=1d517EvW2mkhlhZa8mPGjqnGN3ovaKby7mskuGowNig="
                 alt="profile picture"
               />
               <div className="space-y-0.5 font-medium  text-left rtl:text-right ms-3">

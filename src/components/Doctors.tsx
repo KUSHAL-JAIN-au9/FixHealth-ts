@@ -80,7 +80,7 @@ const Doctors = () => {
     infinite: true,
     // slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     ...(window.innerWidth > 640 ? { slidesToShow: 3 } : { slidesToShow: 1 }),
@@ -121,7 +121,7 @@ const Doctors = () => {
           </button>
         </div> */}
       </div>
-      <div className=" mt-5">
+      <div className=" mt-5 h-[500px] ">
         <Slider ref={slider} {...settings}>
           {doctors.map((doc) => (
             <DoctorsCard doctor={doc} />
